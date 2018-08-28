@@ -45,7 +45,7 @@ if (!org || !token || !gcaptcha_sitekey || !gcaptcha_secret) {
 }
 
 var port = flags.port
-var hostname = flags.hostname
+var hostname = '0.0.0.0'
 
 slackin(flags).listen(port, hostname, function (err) {
   if (err) throw err
